@@ -1,0 +1,128 @@
+/* Reset básico para asegurar que el diseño se vea consistente */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo general y fuente */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    
+}
+
+/* Estilo para el header */
+header {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-bottom: 20px;
+}
+
+/* Título dentro del header */
+header h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Contenedor de las tareas */
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap; /* Permite que los artículos se envuelvan en filas */
+    gap: 20px; /* Espacio entre los artículos */
+    justify-content: flex-start; /* Alinea los artículos desde la izquierda */
+}
+
+/* Estilo para las tareas en la lista */
+ul {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+li {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+/* Estilo para el enlace de "Crear tarea" */
+.centro {
+    text-align: center;
+    margin-top: 20px;
+    display:flex;
+    justify-content: space-around;
+}
+
+/* Botón de crear tarea */
+input[type="submit"] {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 5px 5px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #838383;
+}
+
+/* Estilo del footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #ffffff;
+    padding: 10px;
+    background-color: #000000;
+}
+main {
+    display:flex;
+    justify-content: center;
+}
+.guardar {
+    max-width: 400px;
+    max-height: 200px;
+    background-color: rgb(183, 185, 185);
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 3%;
+}
+article {
+    display: flex;
+    justify-content: flex-start;
+    background-color: rgb(206, 206, 206);
+    margin: 15px 15px;
+    width: 250px;
+    border: 1px solid #000000;
+    padding: 10px;
+    box-sizing: border-box; /* Asegura que el padding no haga que el artículo se desborde */
+}
+.editar {
+    display:flex;
+    justify-content: space-between;
+    max-width: 400px;
+    background-color: rgb(192, 192, 192);
+    padding:10px;
+}
+#guardar {
+    margin-top: 10px;
+}
+#volver {
+    margin-top: 60px;
+}
+#volver1 {
+    margin-top: 25px;
+}
